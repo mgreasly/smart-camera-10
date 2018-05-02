@@ -9,7 +9,17 @@ class ListPage extends Component {
 	render() {
         return (
             <div class="results">
-                {this.props.results && this.props.results.map(function(result, index) {
+                {this.props.loadingResults && <Card class="shadow-card">
+                    <div class="card-media">&nbsp;</div>
+                    <div class="card-text">
+                        <div>
+                            <h1>&nbsp;</h1>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="card-actions">&nbsp;</div>
+                    </div>
+                </Card>}
+                {this.props.results.map(function(result, index) {
                     return (
                         <Card>
                             <div class="card-media"><img src={result.image} /></div>
