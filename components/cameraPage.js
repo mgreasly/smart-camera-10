@@ -23,7 +23,7 @@ class CameraPage extends Component {
       <div class="camera-page">
         <MediaDevices kind="videoinput" selected={this.props.deviceId} handleDeviceChange={this.handleDeviceChange} />
         <div class="webcam">
-          <Webcam key={this.props.deviceId} audioSource="" videoSource={this.state.deviceId} audio={false} ref={webcam => { if (webcam) this.webcam = webcam; }} screenshotFormat="image/jpeg" />
+          <Webcam key={this.props.deviceId} audioSource="" videoSource={this.props.deviceId} audio={false} ref={webcam => { if (webcam) this.webcam = webcam; }} screenshotFormat="image/jpeg" />
         </div>
         <div class="footer">
           <div class="camera-buttons">
