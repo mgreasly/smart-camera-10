@@ -58,8 +58,6 @@ html, body, .app, .camera-page { height: 100%;}
 /* results page */
 .results { margin: 16px; }
 .mdc-card {	flex-direction: row !important; margin-bottom: 8px; height: 152px; }
-.card-skeleton .card-media { height: 154px; width: 200px; background-color: #efefef !important; }
-.card-skeleton .card-text h1, .card-skeleton .card-text p, .card-skeleton .card-actions { background-color: #efefef !important; width: 100%; }
 
 .card-media { width: 300px }
 .card-media img { height: 100%; width: 100%; }
