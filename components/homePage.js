@@ -1,11 +1,7 @@
 import { Component } from 'preact';
 import { route } from 'preact-router';
-import Webcam from 'react-webcam';
 
 export default class HomePage extends Component {
-    capture = () => { 
-        const imageSrc = this.webcam.getScreenshot(); 
-    } 
     render() {
         return (
             <div class="home">
