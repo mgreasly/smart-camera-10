@@ -57,15 +57,22 @@ html, body, .app, .camera-page { height: 100%;}
 
 /* results page */
 .results { margin: 16px; }
-.mdc-card {	flex-direction: row !important; margin-bottom: 8px; }
-.card-media { width: 200px; }
+.mdc-card {	flex-direction: row !important; margin-bottom: 8px; height: 152px; }
+.card-skeleton .card-media { height: 154px; width: 200px; background-color: #efefef !important; }
+.card-skeleton .card-text h1, .card-skeleton .card-text p, .card-skeleton .card-actions { background-color: #efefef !important; width: 100%; }
+
+.card-media { width: 300px }
 .card-media img { height: 100%; width: 100%; }
-.card-text { margin: 8px; display: flex; flex-direction: column; }
+.card-text { margin: 8px; display: flex; flex-direction: column; width: 100%; }
 .card-text h1 { font-size: 1em !important; margin-top: 0; }
 .card-text p { margin: 0; }
 .card-actions { margin-top: auto; }
 .card-action-button { color: #FD7507 !important;}
 
+/* specials page */
+.specials { margin: 16px; }
+
+.shadow-card { height: 152px;}
 .shadow-card .card-media { background-color: #f6f6f6; width: 270px; }
 .shadow-card .card-text { width: 100%; }
 .shadow-card .card-text h1, .shadow-card .card-text p  { background-color: #f6f6f6; width: 100%; }
